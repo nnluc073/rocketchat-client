@@ -15,7 +15,7 @@ The Version of this library is in sync with the rocket.chat release. A version o
 ## getting started
 
 ```bash
-npm install rocketchat
+npm install rocketchat-client
 ```
 
 ```js
@@ -169,15 +169,15 @@ This Lib library package the following functions:
 Install with the node package manager [npm](http://npmjs.org/):
 
 ```
-$ npm install rocketchat
+$ npm install rocketchat-client
 ```
 
 or
 
 Install via git clone:
 ```
-$ git clone https://github.com/qeesung/rocketchat-node.git
-$ cd rocketchat-node
+$ git clone https://github.com/nnluc073/rocketchat-client.git
+$ cd rocketchat-client
 $ npm install
 ```
 
