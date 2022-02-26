@@ -44,6 +44,7 @@ This Lib library package the following functions:
   - [info](#Miscellaneous.info)
 - [Authentication](#Authentication)
   - [login](#Authentication.login)
+  - [loginByToken](#Authentication.loginByToken)
   - [logout](#Authentication.logout)
   - [me](#Authentication.me)
 - [Users](#Users)
@@ -371,7 +372,24 @@ Note that the api methods here will only authenticate the Web Api, not the realt
 this.rocketChatClient.authentication.login(username, password, function (err, body) {});
 ```
 
-[Result (https://rocket.chat/docs/developer-guides/rest-api/authentication/login)](https://rocket.chat/docs/developer-guides/rest-api/authentication/login)
+[Result (https://developer.rocket.chat/reference/api/rest-api/endpoints/other-important-endpoints/authentication-endpoints/login)](https://developer.rocket.chat/reference/api/rest-api/endpoints/other-important-endpoints/authentication-endpoints/login)
+
+```json
+{
+  "status": "success",
+  "data": {
+      "authToken": "9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq",
+      "userId": "aobEdbYhXfu5hkeqG"
+   }
+}
+```
+#### <a id="Authentication.loginByToken"></a>login
+
+```js
+this.rocketChatClient.authentication.loginByToken(token, function (err, body) {});
+```
+
+[Result (https://developer.rocket.chat/reference/api/rest-api/endpoints/other-important-endpoints/authentication-endpoints/login)](https://developer.rocket.chat/reference/api/rest-api/endpoints/other-important-endpoints/authentication-endpoints/login)
 
 ```json
 {
