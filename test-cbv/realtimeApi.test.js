@@ -1,4 +1,4 @@
-var RocketChatClient = require("../lib/rocketChat").RocketChatClient;
+var CBVRocketChatClient = require("../lib/rocketChat").CBVRocketChatClient;
 var should = require("should");
 
 var config = {
@@ -12,7 +12,7 @@ describe("notifyUser", function () {
     let rocketChatClient = null;
 
     before(function (done) {
-        rocketChatClient = new RocketChatClient("https", config.host, config.port, config.token,done);
+        rocketChatClient = new CBVRocketChatClient("https", config.host, config.port, config.token,done);
     });
 
     describe("of a new message", function () {
